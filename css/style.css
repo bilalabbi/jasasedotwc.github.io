@@ -1,0 +1,145 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.scrolling-active {
+  background-color: #222;
+  padding: 15px 0 15px 0;
+}
+
+#whatsapp .wtsapp {
+  position: fixed;
+  transform: all 0.5s ease;
+  background-color: #25d366;
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  border-right: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  bottom: 60px;
+  right: 30px;
+  border: 0;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+
+#whatsapp .wtsapp::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+#whatsapp .wtsapp:focus {
+  border: none;
+  outline: none;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(1.5) scale(1);
+    opacity: 0;
+  }
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("../assets/img/asett/7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero h1 {
+  color: rgb(245, 245, 94);
+  font-size: 40px;
+}
+
+.hero h1 {
+  --animate-delay: 0.7s;
+}
+
+.hero h2 {
+  --animate-delay: 0.9s;
+}
+
+.hero button {
+  --animate-delay: 1s;
+}
+
+.about .row .col:nth-child(1) {
+  background-color: #222;
+}
+
+.about h1 {
+  color: rgb(245, 245, 94);
+}
+
+.project {
+  padding: 100px 0 100px 0;
+}
+
+.project img {
+  height: 250px;
+}
+
+/* .services img {
+  width: 250px;
+  height: 400px;
+} */
+
+.services h5 {
+  line-height: 1.2;
+  display: flex;
+  justify-content: left;
+}
+
+.foter {
+  min-height: 30vh;
+  background-color: #15181f;
+  margin-top: 150px;
+}
+
+.foter .copyright {
+  padding-top: 30px;
+}
+
+section {
+  padding-top: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .services img {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .services h5 {
+    font-size: 15px;
+  }
+}

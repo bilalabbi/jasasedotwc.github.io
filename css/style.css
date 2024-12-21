@@ -2,6 +2,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: white;
+}
+
 .navbar {
   transition: all 0.3s ease-in-out;
 }
@@ -24,7 +28,7 @@
   font-weight: 700;
   font-size: 30px;
   bottom: 60px;
-  right: 30px;
+  right: 20px;
   border: 0;
   z-index: 9999;
   width: 50px;
@@ -107,11 +111,6 @@
   height: 250px;
 }
 
-/* .services img {
-  width: 250px;
-  height: 400px;
-} */
-
 .services h5 {
   line-height: 1.2;
   display: flex;
@@ -138,8 +137,15 @@ section {
   }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 390px) {
   .services h5 {
     font-size: 15px;
+  }
+  .foter p {
+    font-size: 12px;
+  }
+
+  .foter .copyright {
+    font-size: 10px;
   }
 }

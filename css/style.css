@@ -1,5 +1,5 @@
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", serif;
 }
 
 body {
@@ -69,8 +69,7 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
-    url("../assets/img/asett/7.jpg");
+  background-image: url("../assets/img/asett/7.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,12 +110,6 @@ body {
   height: 250px;
 }
 
-.services h5 {
-  line-height: 1.2;
-  display: flex;
-  justify-content: left;
-}
-
 .foter {
   min-height: 30vh;
   background-color: #15181f;
@@ -138,14 +131,11 @@ section {
 }
 
 @media screen and (max-width: 390px) {
-  .services h5 {
-    font-size: 15px;
-  }
-  .foter p {
-    font-size: 12px;
+  .foter h1 {
+    font-size: 10px;
   }
 
   .foter .copyright {
-    font-size: 10px;
+    font-size: 2px;
   }
 }
